@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Button from 'react-bootstrap/Button'; 
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import UIButton from './components/atoms/ui-button.component';
 
 function App() {
   const [texto, setTexto] = useState('Hola Mundo');
@@ -20,10 +21,9 @@ function App() {
           <Card.Text>
             Este es un ejemplo simple usando componentes.
           </Card.Text>
-          <Button variant="primary" onClick={manejarClick}>
-            Púlsame
-          </Button>
-          
+
+          <UIButton label="Botón personalizado" onClick={manejarClick} 
+          ></UIButton>
         </Card.Body>
       </Card>
     </Container>
